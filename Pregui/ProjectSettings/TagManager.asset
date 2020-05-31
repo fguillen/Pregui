@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Window
+    uniqueID: 2586660237
+    locked: 0
   - name: Pregui
     uniqueID: 4016714203
     locked: 0
