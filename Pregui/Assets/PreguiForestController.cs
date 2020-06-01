@@ -68,6 +68,7 @@ public class PreguiForestController : MonoBehaviour
   public void PickupFlower(GameObject flower){
     Debug.Log("PreguiForestController.PickupFlower");
     AudioController.instance.PlayPickupFlower();
+    ((FlowerController)flower.GetComponent(typeof(FlowerController))).DeactivePickupCollider();
     flowers.Add(flower);
   }
 }
