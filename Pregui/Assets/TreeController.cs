@@ -22,7 +22,6 @@ public class TreeController : MonoBehaviour
     {
       // Change wind
       var random = (int)Mathf.Round(Random.Range(0, 2));
-      Debug.Log("Change wind: " + random);
       animator.SetInteger("wind", random);
     }
   }

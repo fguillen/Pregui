@@ -22,7 +22,6 @@ public class PreguiForestExpressionController : MonoBehaviour
     {
       // Change expression
       var random = (int)Mathf.Round(Random.Range(1, 4));
-      Debug.Log("Change expression: " + random);
       animator.SetInteger("expression", random);
     }
   }
