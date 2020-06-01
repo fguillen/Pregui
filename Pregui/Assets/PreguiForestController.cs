@@ -47,5 +47,9 @@ public class PreguiForestController : MonoBehaviour
 
     theRB.velocity = direction;
     gameObject.transform.localScale = scale;
+
+    if(Input.GetKeyDown(KeyCode.Space)) {
+      animator.SetTrigger("pickFlower");
+    }
   }
 }
