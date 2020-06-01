@@ -13,6 +13,8 @@ public class PreguiForestController : MonoBehaviour
   private Animator animator;
   public List<GameObject> flowers;
   public GameObject flowersHand;
+  public GameObject flowersArm;
+  private float[] flowersRotations;
 
   void Awake() {
     instance = this;
@@ -20,6 +22,7 @@ public class PreguiForestController : MonoBehaviour
     scale = new Vector3(1f, 1f, 1f);
     animator = gameObject.GetComponent<Animator>();
     theRB = gameObject.GetComponent<Rigidbody2D>();
+    flowersRotations = new float[] { 0, -20, 20, -40, 40 };
   }
   // Start is called before the first frame update
   void Start()
@@ -57,6 +60,14 @@ public class PreguiForestController : MonoBehaviour
     }
 
     CenterFlowers();
+    ShowFlowersArm();
+  }
+
+  void ShowFlowersArm() {
+    // if(!flowersArm.gameObject.active && flowers.Count > 0) {
+    //   Debug.Log("ShowFlowersArm");
+      // flowersArm.gameObject.SetActive(true);
+    // }
   }
 
   void CenterFlowers(){
@@ -69,6 +80,7 @@ public class PreguiForestController : MonoBehaviour
     Debug.Log("PreguiForestController.PickupFlower");
     AudioController.instance.PlayPickupFlower();
     ((FlowerController)flower.GetComponent(typeof(FlowerController))).DeactivePickupCollider();
+    flower.transform.rotation = Quaternion.Euler(flower.transform.rotation.x, flower.transform.rotation.y, flowersRotations[flowers.Count]);
     flowers.Add(flower);
   }
 }
