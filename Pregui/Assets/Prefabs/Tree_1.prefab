@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 0.9596774, b: 0, a: 1}
-  m_Length: 0.8412284
+  m_Length: 0.83601016
   m_ChildTransform: {fileID: 3658838411106802581}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &3658838410615967394
@@ -103,7 +103,7 @@ MonoBehaviour:
     m_SolverPoses:
     - m_BoneTransform: {fileID: 3658838411106802581}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.034318842, w: 0.9994109}
+      solverRotation: {x: 0, y: 0, z: -0.021286273, w: 0.99977344}
       defaultLocalRotation: {x: 0, y: 0, z: 0, w: 1}
     - m_BoneTransform: {fileID: 3658838411573355674}
       solverPosition: {x: 0, y: 0, z: 0}
@@ -111,8 +111,8 @@ MonoBehaviour:
       defaultLocalRotation: {x: 0, y: 0, z: -0.002238813, w: 0.99999756}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -7.128337, y: 4.3265405, z: 0}
-    flip: 1
+    targetPosition: {x: 6.67, y: 4.83, z: 0}
+    flip: 0
 --- !u!1 &3658838410622442274
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,14 +245,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3658838411106802578}
-  m_LocalRotation: {x: 0, y: 0, z: -0.02132569, w: 0.9997726}
-  m_LocalPosition: {x: 0.84122825, y: 0.000000059604645, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.021286273, w: 0.99977344}
+  m_LocalPosition: {x: 0.83601, y: 0.000000059604645, z: 0.00074124336}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3658838411573355674}
   m_Father: {fileID: 3658838410415858220}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.444}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.4390001}
 --- !u!114 &3658838411106802580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 0.9528302, g: 0.90049964, b: 0.085395135, a: 1}
-  m_Length: 1.2439475
+  m_Length: 1.2439468
   m_ChildTransform: {fileID: 3658838411573355674}
   m_AttachedIK: {fileID: 3658838410615967396}
 --- !u!1 &3658838411318124697
