@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4572664109227444415}
   - component: {fileID: 4470595743161133388}
+  - component: {fileID: 989850793}
   m_Layer: 0
   m_Name: Tree_2
   m_TagString: Untagged
@@ -52,6 +53,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &989850793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3812638038989669911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf753e170e750431087570cf29f7b515, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!1 &7123013168794056192
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,8 +133,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1980884013
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6695779107833331781, guid: 0d3af68d2d11b4bf0a0354508fa9773f,
     type: 3}
@@ -201,8 +215,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1980884013
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -7335513018954764258, guid: 0d3af68d2d11b4bf0a0354508fa9773f,
     type: 3}

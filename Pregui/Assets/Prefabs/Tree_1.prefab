@@ -73,7 +73,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3658838410615967394}
   m_LocalRotation: {x: -0, y: -0, z: -0.000000059604638, w: 1}
-  m_LocalPosition: {x: 0.04, y: 3.66, z: 3.764413}
+  m_LocalPosition: {x: -0.05, y: 3.69, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3658838411318124696}
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1980884013
   m_SortingOrder: 0
   m_BoneTransforms:
   - {fileID: 3658838410415858220}
@@ -203,8 +203,8 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1980884013
+  m_SortingLayer: 3
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
@@ -245,14 +245,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3658838411106802578}
-  m_LocalRotation: {x: 0, y: 0, z: -0.021286273, w: 0.99977344}
+  m_LocalRotation: {x: 0, y: 0, z: -0.005414718, w: 0.99998534}
   m_LocalPosition: {x: 0.83601, y: 0.000000059604645, z: 0.00074124336}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3658838411573355674}
   m_Father: {fileID: 3658838410415858220}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.4390001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.62}
 --- !u!114 &3658838411106802580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 0.9528302, g: 0.90049964, b: 0.085395135, a: 1}
-  m_Length: 1.2439468
+  m_Length: 1.2439473
   m_ChildTransform: {fileID: 3658838411573355674}
   m_AttachedIK: {fileID: 3658838410615967396}
 --- !u!1 &3658838411318124697
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 3658838411318124699}
   - component: {fileID: 3658838411318124698}
   m_Layer: 0
-  m_Name: tree
+  m_Name: Tree_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

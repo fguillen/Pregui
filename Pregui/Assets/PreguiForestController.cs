@@ -61,6 +61,14 @@ public class PreguiForestController : MonoBehaviour
 
     CenterFlowers();
     ShowFlowersArm();
+
+    if(direction.y != 0f) {
+      RenderOrder();
+    }
+  }
+
+  void RenderOrder() {
+    SpriteRenderOrderSystem.Order(gameObject);
   }
 
   void ShowFlowersArm() {
