@@ -15,7 +15,6 @@ public class SpriteRenderOrderSystem : MonoBehaviour
   }
 
   public void Order(GameObject gameObject){
-    Debug.Log("Order --------- ");
     OrderSpriteRenderers(gameObject);
     OrderSpriteMeshInstances(gameObject);
   }
@@ -27,7 +26,7 @@ public class SpriteRenderOrderSystem : MonoBehaviour
       int minSortingOrder = (int)elements.Min(element => element.sortingOrder);
       float minY = (float)elements.Min(element => BottomY(element));
 
-      Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
+      // Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
 
       foreach(SpriteRenderer element in elements){
         BottomY(element);
@@ -44,7 +43,7 @@ public class SpriteRenderOrderSystem : MonoBehaviour
       int minSortingOrder = (int)elements.Min(element => element.sortingOrder);
       float minY = (float)elements.Min(element => BottomY(element));
 
-      Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
+      // Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
 
       foreach(SpriteMeshInstance element in elements){
         int finalSortingOrder = element.sortingOrder - minSortingOrder; // Normalize
