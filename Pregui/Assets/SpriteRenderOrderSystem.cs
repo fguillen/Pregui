@@ -7,23 +7,27 @@ using Anima2D;
 
 public class SpriteRenderOrderSystem : MonoBehaviour
 {
+  public static SpriteRenderOrderSystem instance;
+  public GameObject baseLine;
 
-  public static void Order(GameObject gameObject){
+  void Awake() {
+    instance = this;
+  }
+
+  public void Order(GameObject gameObject){
     Debug.Log("Order --------- ");
     OrderSpriteRenderers(gameObject);
     OrderSpriteMeshInstances(gameObject);
   }
 
-  static void OrderSpriteRenderers(GameObject gameObject){
+  void OrderSpriteRenderers(GameObject gameObject){
     SpriteRenderer[] elements = gameObject.GetComponentsInChildren<SpriteRenderer>(true);
-
-    Debug.Log("elements.Count: " + elements.Count());
 
     if(elements.Count() > 0) {
       int minSortingOrder = (int)elements.Min(element => element.sortingOrder);
       float minY = (float)elements.Min(element => BottomY(element));
-      Debug.Log("minSortingOrder: " + minSortingOrder);
-      Debug.Log("minY: " + minY);
+
+      // Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
 
       foreach(SpriteRenderer element in elements){
         BottomY(element);
@@ -34,11 +38,13 @@ public class SpriteRenderOrderSystem : MonoBehaviour
     }
   }
 
-  static void OrderSpriteMeshInstances(GameObject gameObject){
+  void OrderSpriteMeshInstances(GameObject gameObject){
     SpriteMeshInstance[] elements = gameObject.GetComponentsInChildren<SpriteMeshInstance>(true);
     if(elements.Count() > 0) {
       int minSortingOrder = (int)elements.Min(element => element.sortingOrder);
       float minY = (float)elements.Min(element => BottomY(element));
+
+      // Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
 
       foreach(SpriteMeshInstance element in elements){
         int finalSortingOrder = element.sortingOrder - minSortingOrder; // Normalize
@@ -50,23 +56,11 @@ public class SpriteRenderOrderSystem : MonoBehaviour
 
   static float BottomY(SpriteRenderer spriteRenderer){
     Renderer renderer = spriteRenderer.GetComponent<Renderer>();
-
-    // Debug.Log("bounds: " + renderer.bounds.ToString());
-    // Debug.Log("centerY: " + renderer.bounds.center.y);
-    // Debug.Log("extents: " + renderer.bounds.extents.ToString());
-    // Debug.Log("extentsY: " + renderer.bounds.extents.y);
-
-    return renderer.bounds.center.y + renderer.bounds.extents.y;
+    return renderer.bounds.center.y - renderer.bounds.extents.y;
   }
 
   static float BottomY(SpriteMeshInstance spriteRenderer){
     Renderer renderer = spriteRenderer.GetComponent<Renderer>();
-
-    // Debug.Log("bounds: " + renderer.bounds.ToString());
-    // Debug.Log("centerY: " + renderer.bounds.center.y);
-    // Debug.Log("extents: " + renderer.bounds.extents.ToString());
-    // Debug.Log("extentsY: " + renderer.bounds.extents.y);
-
-    return renderer.bounds.center.y + renderer.bounds.extents.y;
+    return renderer.bounds.center.y - renderer.bounds.extents.y;
   }
 }

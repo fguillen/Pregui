@@ -27,7 +27,7 @@ public class PreguiForestController : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
-
+    RenderOrder();
   }
 
   // Update is called once per frame
@@ -68,7 +68,7 @@ public class PreguiForestController : MonoBehaviour
   }
 
   void RenderOrder() {
-    SpriteRenderOrderSystem.Order(gameObject);
+    SpriteRenderOrderSystem.instance.Order(gameObject);
   }
 
   void ShowFlowersArm() {
