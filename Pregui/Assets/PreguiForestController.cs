@@ -56,7 +56,7 @@ public class PreguiForestController : MonoBehaviour
     gameObject.transform.localScale = scale;
 
     if(Input.GetKeyDown(KeyCode.Space)) {
-      animator.SetTrigger("pickFlower");
+      BendDown();
     }
 
     CenterFlowers();
@@ -82,6 +82,11 @@ public class PreguiForestController : MonoBehaviour
     foreach(var flower in flowers){
       flower.transform.position = flowersHand.transform.position;
     }
+  }
+
+  void BendDown(){
+    AudioController.instance.PlayGrunt();
+    animator.SetTrigger("pickFlower");
   }
 
   public void PickupFlower(GameObject flower){

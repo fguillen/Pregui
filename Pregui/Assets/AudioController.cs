@@ -8,6 +8,7 @@ public class AudioController : MonoBehaviour
 
   public AudioSource pickupFlower;
   public AudioSource flowerBorn;
+  public AudioSource grunt;
 
   private void Awake()
   {
@@ -34,6 +35,11 @@ public class AudioController : MonoBehaviour
   public void PlayFlowerBorn()
   {
     flowerBorn.Play();
+  }
+
+  public void PlayGrunt()
+  {
+    grunt.Play();
   }
 
 }
