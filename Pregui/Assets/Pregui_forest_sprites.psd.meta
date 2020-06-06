@@ -40,13 +40,13 @@ TextureImporter:
     second: Pregui_forest_sprites_11
   - first:
       213: 3211810356567524379
-    second: Pregui_forest_sprites_12
+    second: Pregui_forest_house_2
   - first:
       213: 3800552352842235150
-    second: Pregui_forest_sprites_13
+    second: Pregui_forest_house_door_2
   - first:
       213: 8657190148990998671
-    second: Pregui_forest_sprites_14
+    second: Pregui_forest_house_1
   - first:
       213: -8884480595591365673
     second: Pregui_forest_sprites_15
@@ -155,6 +155,12 @@ TextureImporter:
   - first:
       213: -6420219484663689873
     second: Pregui_forest_sprites_50
+  - first:
+      213: -676304179616401479
+    second: Pregui_forest_house_2
+  - first:
+      213: -1307690399666739866
+    second: Pregui_forest_house_door_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -528,510 +534,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pregui_forest_sprites_12
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 235
-        width: 23
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b14c02d9084a29c20800000000000000
-      internalID: 3211810356567524379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_13
-      rect:
-        serializedVersion: 2
-        x: 228
-        y: 234
-        width: 23
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0dbf6d8a364eb430800000000000000
-      internalID: 3800552352842235150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_14
-      rect:
-        serializedVersion: 2
-        x: 281
-        y: 235
-        width: 28
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f889e9f9294842870800000000000000
-      internalID: 8657190148990998671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_15
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 235
-        width: 22
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7dbfce568fbf3b480800000000000000
-      internalID: -8884480595591365673
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_16
-      rect:
-        serializedVersion: 2
-        x: 388
-        y: 230
-        width: 21
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e29904ee75cb53ea0800000000000000
-      internalID: -5893597451499038418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_17
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 228
-        width: 26
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fbb89de99c97b0f0800000000000000
-      internalID: -1101239398938657803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_18
-      rect:
-        serializedVersion: 2
-        x: 492
-        y: 232
-        width: 28
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48f4be292d2d3aac0800000000000000
-      internalID: -3844997854994411644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_19
-      rect:
-        serializedVersion: 2
-        x: 524
-        y: 234
-        width: 24
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d367c82b79f5d4d0800000000000000
-      internalID: -3110305660269009960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_20
-      rect:
-        serializedVersion: 2
-        x: 586
-        y: 233
-        width: 26
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26385003fa3d7c220800000000000000
-      internalID: 2506204467033375586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_21
-      rect:
-        serializedVersion: 2
-        x: 617
-        y: 235
-        width: 28
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79adbb88c6b0277a0800000000000000
-      internalID: -6381025161252185449
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_22
-      rect:
-        serializedVersion: 2
-        x: 677
-        y: 233
-        width: 24
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c24c30158fe04d30800000000000000
-      internalID: 4413790989605159625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_23
-      rect:
-        serializedVersion: 2
-        x: 713
-        y: 236
-        width: 24
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ef9ed3ca79fc6a20800000000000000
-      internalID: 3057092552745197540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_24
-      rect:
-        serializedVersion: 2
-        x: 770
-        y: 234
-        width: 20
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be0adcc052f452a00800000000000000
-      internalID: 731077535064760555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_25
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 235
-        width: 23
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e157d63dc321c870800000000000000
-      internalID: 8701275319351857640
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_26
-      rect:
-        serializedVersion: 2
-        x: 853
-        y: 239
-        width: 24
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23f3d307d96660960800000000000000
-      internalID: 7567849050221657906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_27
-      rect:
-        serializedVersion: 2
-        x: 893
-        y: 242
-        width: 22
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e97ab8eb44782e860800000000000000
-      internalID: 7557751854005462942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_28
-      rect:
-        serializedVersion: 2
-        x: 953
-        y: 239
-        width: 21
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbc3a90766208ca50800000000000000
-      internalID: 6541481097754721467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_29
-      rect:
-        serializedVersion: 2
-        x: 984
-        y: 244
-        width: 22
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c92c4674d612b91f0800000000000000
-      internalID: -1037198535945829732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_30
-      rect:
-        serializedVersion: 2
-        x: 1042
-        y: 244
-        width: 30
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f175a8e1b7f39550800000000000000
-      internalID: 6166544658284769785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_31
-      rect:
-        serializedVersion: 2
-        x: 1084
-        y: 247
-        width: 32
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db3b930ece7bae940800000000000000
-      internalID: 5326271737321075645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_32
-      rect:
-        serializedVersion: 2
-        x: 1137
-        y: 246
-        width: 33
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d70047c02f3736aa0800000000000000
-      internalID: -6168959581139238787
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_33
-      rect:
-        serializedVersion: 2
-        x: 1177
-        y: 250
-        width: 27
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa3d79dbf016f8310800000000000000
-      internalID: 1409451928623502250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_34
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 34
-        width: 198
-        height: 176
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ea620371481a8770800000000000000
-      internalID: 8613723906680974056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_35
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 86
-        width: 46
-        height: 81
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a9fa7b8b80744420800000000000000
-      internalID: 2613337428424587682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Pregui_forest_sprites_36
       rect:
         serializedVersion: 2
@@ -1111,27 +613,6 @@ TextureImporter:
       bones: []
       spriteID: bcb036fa553ac05b0800000000000000
       internalID: -5400762264714015797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pregui_forest_sprites_40
-      rect:
-        serializedVersion: 2
-        x: 920
-        y: 69
-        width: 83
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4022de5fd82404640800000000000000
-      internalID: 5062119158648218116
       vertices: []
       indices: 
       edges: []
@@ -1334,7 +815,7 @@ TextureImporter:
         width: 19
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1342,6 +823,69 @@ TextureImporter:
       bones: []
       spriteID: f6d449cf46cc6e6a0800000000000000
       internalID: -6420219484663689873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pregui_forest_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 16
+        width: 276
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b73add8ee84d96f0800000000000000
+      internalID: -676304179616401479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pregui_forest_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 54
+        width: 103
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665ecab82862adde0800000000000000
+      internalID: -1307690399666739866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pregui_forest_house_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 39
+        width: 286
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f889e9f9294842870800000000000000
+      internalID: 8657190148990998671
       vertices: []
       indices: 
       edges: []
