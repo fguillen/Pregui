@@ -540,12 +540,12 @@ MonoBehaviour:
   limitEast: {fileID: 1296047399}
   limitSouth: {fileID: 2033011130}
   limitWest: {fileID: 1024422592}
-  treeTemplates:
+  forestElementTemplates:
+  - {fileID: 2207603805722921589, guid: 4a1f11d11c7cc447c9f7aa315328eef5, type: 3}
   - {fileID: 3658838411318124697, guid: a900619e354794ecfb188ec0042ac4f8, type: 3}
   - {fileID: 3812638038989669911, guid: 28a4eef3f87ad4947b3d63afcb01a148, type: 3}
   - {fileID: 3694179053470678799, guid: 65231388c7241431bb7a6a47bf3c27be, type: 3}
   - {fileID: 886001791497922214, guid: 63e836d8f43b54d11ae24b7519d8e987, type: 3}
-  - {fileID: 2207603805722921589, guid: 4a1f11d11c7cc447c9f7aa315328eef5, type: 3}
 --- !u!1 &809013254
 GameObject:
   m_ObjectHideFlags: 0

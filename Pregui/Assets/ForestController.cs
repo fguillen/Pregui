@@ -11,7 +11,7 @@ public class ForestController : MonoBehaviour
 
   private string[] cellElements;
 
-  public List<GameObject> treeTemplates;
+  public List<GameObject> forestElementTemplates;
   private List<GameObject> forestElements;
 
 
@@ -52,10 +52,11 @@ public class ForestController : MonoBehaviour
     for(int x = xMin; x < xMax; x++) {
       for(int y = yMin; y < yMax; y++) {
         var index = (int)Mathf.Round(Random.Range(0, cellElements.Length));
+        float noise = Random.Range(-5, 5) / 10f;
         switch (cellElements[index])
         {
           case "tree":
-            GameObject forestElement = InstantiateTree(x, y);
+            GameObject forestElement = InstantiateForestElement((float)x + noise, (float)y + noise);
             forestElements.Add(forestElement);
             break;
         }
@@ -64,9 +65,10 @@ public class ForestController : MonoBehaviour
     }
   }
 
-  GameObject InstantiateTree(int x, int y){
-    int index = (int)Mathf.Round(Random.Range(0, treeTemplates.Count));
-    GameObject forestElement = Instantiate(treeTemplates[index], new Vector3(x, y, 0f), gameObject.transform.rotation);
+  GameObject InstantiateForestElement(float x, float y){
+    int index = (int)Mathf.Round(Random.Range(0, forestElementTemplates.Count - 1));
+    Debug.Log("index: " + index);
+    GameObject forestElement = Instantiate(forestElementTemplates[index], new Vector3(x, y, 0f), gameObject.transform.rotation);
 
     return forestElement;
   }
