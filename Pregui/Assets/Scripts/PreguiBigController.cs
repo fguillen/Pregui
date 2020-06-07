@@ -55,19 +55,27 @@ public class PreguiBigController : MonoBehaviour
     gameObject.transform.localScale = scale;
 
     if(Input.GetKeyDown(KeyCode.Space)) {
-      TryOpenDoor();
+      if(state == "withFlowers") {
+        ActionTryToPutFlowersInTheVase();
+      } else {
+        ActionTryOpenDoor();
+      }
     }
-  }
-
-  void TryOpenDoor(){
-    state = "tryOpenDoor";
-    RenderFigure();
-    animator.SetTrigger("openDoor");
   }
 
   void FinishOpenDoor(){
     state = "normal";
     RenderFigure();
+  }
+
+  void ActionTryOpenDoor(){
+    state = "tryOpenDoor";
+    RenderFigure();
+    animator.SetTrigger("openDoor");
+  }
+
+  void ActionTryToPutFlowersInTheVase(){
+    animator.SetTrigger("putFlowersinTheVase");
   }
 
   void RenderFigure(){
