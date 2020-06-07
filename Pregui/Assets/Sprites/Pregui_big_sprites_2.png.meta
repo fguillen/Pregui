@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -1253994231329337233
-    second: DoorOpen
+    second: DoorClosed
   - first:
       213: -8502104621769807889
-    second: DoorClose
+    second: DoorOpen
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DoorOpen
+      name: DoorClosed
       rect:
         serializedVersion: 2
         x: 35
@@ -137,7 +137,7 @@ TextureImporter:
         width: 316
         height: 523
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,15 +150,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoorClose
+      name: DoorOpen
       rect:
         serializedVersion: 2
         x: 390
-        y: 158
+        y: 160
         width: 312
         height: 523
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
