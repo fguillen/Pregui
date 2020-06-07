@@ -43,7 +43,16 @@ TextureImporter:
     second: Mouth_2
   - first:
       213: 358672977954300532
-    second: Pregui_big_sprites_13
+    second: Figure_2
+  - first:
+      213: 7136182673929106680
+    second: Arm
+  - first:
+      213: -508153666082343747
+    second: Pregui_big_sprites_15
+  - first:
+      213: -5114266828437617353
+    second: Pregui_big_sprites_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -404,7 +413,7 @@ TextureImporter:
         width: 36
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,7 +434,7 @@ TextureImporter:
         width: 48
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -433,6 +442,90 @@ TextureImporter:
       bones: []
       spriteID: ec5c14529622c30c0800000000000000
       internalID: -4594759684832770610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Figure_2
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 88
+        width: 204
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4726f715c234af400800000000000000
+      internalID: 358672977954300532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arm
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 35
+        width: 231
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f477d33550d80360800000000000000
+      internalID: 7136182673929106680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pregui_big_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 46
+        width: 89
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db479d9deeca2f8f0800000000000000
+      internalID: -508153666082343747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pregui_big_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 98
+        width: 97
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73589648a697609b0800000000000000
+      internalID: -5114266828437617353
       vertices: []
       indices: 
       edges: []
