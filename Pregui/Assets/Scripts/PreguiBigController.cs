@@ -16,16 +16,22 @@ public class PreguiBigController : MonoBehaviour
   public GameObject handOpen;
   public GameObject handClosed;
   private string state;
+  // private DataStorage dataStorage;
 
   void Awake() {
     direction = Vector2.zero;
     scale = new Vector3(1f, 1f, 1f);
     animator = gameObject.GetComponent<Animator>();
     state = "normal";
+    // dataStorage = ScriptableObject.CreateInstance<DataStorage>();
   }
   // Start is called before the first frame update
   void Start()
   {
+    if(DataStorage.HasFlowers()){
+      state = "withFlowers";
+    }
+
     RenderFigure();
   }
 
@@ -88,7 +94,14 @@ public class PreguiBigController : MonoBehaviour
       handClosed.SetActive(false);
       handOpen.SetActive(true);
     }
+
+    if(state == "withFlowers") {
+      Debug.Log("withFlowers");
+      figure.SetActive(false);
+      figureWithFlowers.SetActive(true);
+      armWithFlowers.SetActive(true);
+      handClosed.SetActive(true);
+      handOpen.SetActive(false);
+    }
   }
-
-
 }
