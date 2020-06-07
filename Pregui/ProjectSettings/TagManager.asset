@@ -42,7 +42,7 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Window
+  - name: House
     uniqueID: 2586660237
     locked: 0
   - name: Pregui
