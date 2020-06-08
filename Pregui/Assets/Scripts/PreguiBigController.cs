@@ -111,6 +111,7 @@ public class PreguiBigController : MonoBehaviour
 
   public List<GameObject> GetFlowers(){
     state = "happy";
+    RenderFigure();
     Debug.Log("happy");
     return flowers;
   }
@@ -122,7 +123,6 @@ public class PreguiBigController : MonoBehaviour
       figureWithFlowers.SetActive(false);
       armWithFlowers.SetActive(false);
       openDoorHand.SetActive(false);
-      putFlowersHand.SetActive(false);
     }
 
     if(state == "tryOpenDoor") {
@@ -133,7 +133,6 @@ public class PreguiBigController : MonoBehaviour
       handClosed.SetActive(false);
       handOpen.SetActive(true);
       openDoorHand.SetActive(true);
-      putFlowersHand.SetActive(false);
     }
 
     if(state == "withFlowers") {
@@ -144,7 +143,15 @@ public class PreguiBigController : MonoBehaviour
       handClosed.SetActive(true);
       handOpen.SetActive(false);
       openDoorHand.SetActive(false);
-      putFlowersHand.SetActive(true);
+    }
+
+    if(state == "happy") {
+      figure.SetActive(true);
+      figureWithFlowers.SetActive(false);
+      armWithFlowers.SetActive(false);
+      handClosed.SetActive(false);
+      handOpen.SetActive(false);
+      openDoorHand.SetActive(false);
     }
   }
 }
