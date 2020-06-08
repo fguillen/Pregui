@@ -5,6 +5,7 @@ using UnityEngine;
 public class PreguiBigController : MonoBehaviour
 {
 
+  public static PreguiBigController instance;
   public Rigidbody2D theRB;
   public float velocity;
   private Vector2 direction;
@@ -15,6 +16,8 @@ public class PreguiBigController : MonoBehaviour
   public GameObject armWithFlowers;
   public GameObject handOpen;
   public GameObject handClosed;
+  public GameObject openDoorHand;
+  public GameObject putFlowersHand;
   private string state;
   // private DataStorage dataStorage;
 
@@ -25,6 +28,7 @@ public class PreguiBigController : MonoBehaviour
   public GameObject flowersHandler;
 
   void Awake() {
+    instance = this;
     direction = Vector2.zero;
     scale = new Vector3(1f, 1f, 1f);
     animator = gameObject.GetComponent<Animator>();
@@ -71,7 +75,7 @@ public class PreguiBigController : MonoBehaviour
       }
     }
 
-    if(DataStorage.HasFlowers()) {
+    if(state == "withFlowers") {
       CenterFlowers();
     }
   }
@@ -105,20 +109,20 @@ public class PreguiBigController : MonoBehaviour
     animator.SetTrigger("putFlowersinTheVase");
   }
 
+  public List<GameObject> GetFlowers(){
+    state = "happy";
+    Debug.Log("happy");
+    return flowers;
+  }
+
   void RenderFigure(){
     if(state == "normal") {
       Debug.Log("normal");
       figure.SetActive(true);
       figureWithFlowers.SetActive(false);
       armWithFlowers.SetActive(false);
-    }
-
-    if(state == "withFlowers") {
-      figure.SetActive(false);
-      figureWithFlowers.SetActive(true);
-      armWithFlowers.SetActive(true);
-      handClosed.SetActive(true);
-      handOpen.SetActive(false);
+      openDoorHand.SetActive(false);
+      putFlowersHand.SetActive(false);
     }
 
     if(state == "tryOpenDoor") {
@@ -128,6 +132,8 @@ public class PreguiBigController : MonoBehaviour
       armWithFlowers.SetActive(true);
       handClosed.SetActive(false);
       handOpen.SetActive(true);
+      openDoorHand.SetActive(true);
+      putFlowersHand.SetActive(false);
     }
 
     if(state == "withFlowers") {
@@ -137,6 +143,8 @@ public class PreguiBigController : MonoBehaviour
       armWithFlowers.SetActive(true);
       handClosed.SetActive(true);
       handOpen.SetActive(false);
+      openDoorHand.SetActive(false);
+      putFlowersHand.SetActive(true);
     }
   }
 }
