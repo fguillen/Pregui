@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DataStorage : ScriptableObject
 {
-  private static int numOfFlowers;
+  public static int numOfFlowers = 5;
 
   public static void IncreaseNumOfFlowers(){
     numOfFlowers ++;

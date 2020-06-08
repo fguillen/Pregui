@@ -18,18 +18,27 @@ public class PreguiBigController : MonoBehaviour
   private string state;
   // private DataStorage dataStorage;
 
+  // Flowers
+  public GameObject flowerTemplate;
+  public List<GameObject> flowers;
+  private float[] flowersRotations;
+  public GameObject flowersHandler;
+
   void Awake() {
     direction = Vector2.zero;
     scale = new Vector3(1f, 1f, 1f);
     animator = gameObject.GetComponent<Animator>();
     state = "normal";
     // dataStorage = ScriptableObject.CreateInstance<DataStorage>();
+
+    flowersRotations = new float[] { 0, -20, 20, -40, 40 };
   }
   // Start is called before the first frame update
   void Start()
   {
     if(DataStorage.HasFlowers()){
       state = "withFlowers";
+      InitFlowers();
     }
 
     RenderFigure();
@@ -60,6 +69,24 @@ public class PreguiBigController : MonoBehaviour
       } else {
         ActionTryOpenDoor();
       }
+    }
+
+    if(DataStorage.HasFlowers()) {
+      CenterFlowers();
+    }
+  }
+
+  void InitFlowers(){
+    for(int n = 0; n < DataStorage.numOfFlowers; n++){
+      var rotation = Quaternion.Euler(0f, 0f, flowersRotations[n]);
+      var flower = Instantiate(flowerTemplate, flowersHandler.transform.position, rotation);
+      flowers.Add(flower);
+    }
+  }
+
+  void CenterFlowers(){
+    foreach(var flower in flowers){
+      flower.transform.position = flowersHandler.transform.position;
     }
   }
 
