@@ -111,6 +111,8 @@ public class PreguiBigController : MonoBehaviour
 
   public List<GameObject> GetFlowers(){
     state = "happy";
+    MouthController.instance.Smile();
+    ExpressionController.instance.Smile();
     RenderFigure();
     Debug.Log("happy");
     return flowers;

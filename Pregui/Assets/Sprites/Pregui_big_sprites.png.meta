@@ -56,6 +56,12 @@ TextureImporter:
   - first:
       213: -2791430622803984939
     second: Flower
+  - first:
+      213: 6237910804192526008
+    second: Pregui_big_sprites_18
+  - first:
+      213: -7590199308951394443
+    second: Pregui_big_sprites_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -542,7 +548,7 @@ TextureImporter:
         width: 89
         height: 222
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -550,6 +556,48 @@ TextureImporter:
       bones: []
       spriteID: 5ddfe9063a8d249d0800000000000000
       internalID: -2791430622803984939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pregui_big_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 440
+        width: 44
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be777893d2819650800000000000000
+      internalID: 6237910804192526008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pregui_big_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 397
+        width: 53
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577698f61f13aa690800000000000000
+      internalID: -7590199308951394443
       vertices: []
       indices: 
       edges: []
