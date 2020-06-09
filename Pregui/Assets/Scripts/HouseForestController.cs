@@ -48,7 +48,6 @@ public class HouseForestController : MonoBehaviour
 
   float DistanceWithPregui(){
     float distance = Vector3.Distance(doorHandler.transform.position, pregui.transform.position);
-    Debug.Log("distance: " + distance);
     return distance;
   }
 }

@@ -14,6 +14,8 @@ public class ForestController : MonoBehaviour
   public List<GameObject> forestElementTemplates;
   private List<GameObject> forestElements;
 
+  public GameObject noTreesArea;
+
 
   void Awake(){
     forestElements = new List<GameObject>();
@@ -56,8 +58,14 @@ public class ForestController : MonoBehaviour
         switch (cellElements[index])
         {
           case "tree":
-            GameObject forestElement = InstantiateForestElement((float)x + noise, (float)y + noise);
-            forestElements.Add(forestElement);
+            float xFinal = (float)x + noise;
+            float yFinal = (float)y + noise;
+
+            if(!PointIsIntoTheNoTreesArea(x, y)) {
+              GameObject forestElement = InstantiateForestElement(xFinal, yFinal);
+              forestElements.Add(forestElement);
+            }
+
             break;
         }
 
@@ -70,5 +78,9 @@ public class ForestController : MonoBehaviour
     GameObject forestElement = Instantiate(forestElementTemplates[index], new Vector3(x, y, 0f), gameObject.transform.rotation);
 
     return forestElement;
+  }
+
+  bool PointIsIntoTheNoTreesArea(float x, float y) {
+    return noTreesArea.transform.GetComponent<BoxCollider2D>().bounds.Contains(new Vector2(x, y));
   }
 }
