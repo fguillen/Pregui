@@ -2,12 +2,13 @@
   "folders":
   [
     {
-      "path": "Assets/Scripts",
+      "path": "Pregui/Assets/Scripts",
       "file_exclude_patterns":
       [
         "*.dll",
         "*.meta"
       ]
     }
-  ]
+  ],
+  "solution_file": "./Pregui/Pregui.sln",
 }
