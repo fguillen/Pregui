@@ -28,8 +28,6 @@ public class VaseController : MonoBehaviour
   }
 
   void OnTriggerEnter2D(Collider2D other) {
-    Debug.Log("VaseController collision");
-
     if(other.CompareTag("PutFlowersHand")) {
       DepositFlowers(PreguiBigController.instance.GetFlowers());
     }

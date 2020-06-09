@@ -29,14 +29,12 @@ public class DoorController : MonoBehaviour
   }
 
   void OnTriggerEnter2D(Collider2D other){
-    Debug.Log("collision");
     if(state == "closed" && other.CompareTag("PreguiHand")) {
       Open();
     }
   }
 
   void Open(){
-    Debug.Log("open");
     animator.SetBool("open", true);
     state = "open";
   }
@@ -44,7 +42,6 @@ public class DoorController : MonoBehaviour
   void CheckIfPreguiIsInTheDoor() {
     if(state == "open"){
       if(doorFrameCollider.bounds.Intersects(preguiFrameCollider.bounds)) {
-        Debug.Log("preguiOut");
         CanvasController.instance.WhiteFadeIn();
       }
     }

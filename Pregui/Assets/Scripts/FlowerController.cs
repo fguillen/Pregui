@@ -33,7 +33,6 @@ public class FlowerController : MonoBehaviour
 
     if(state == "unborn" && Random.Range(1, 50) == 1)
     {
-      Debug.Log("Bump");
       animator.SetTrigger("Bump");
     }
 

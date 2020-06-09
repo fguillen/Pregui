@@ -66,8 +66,7 @@ public class ForestController : MonoBehaviour
   }
 
   GameObject InstantiateForestElement(float x, float y){
-    int index = (int)Mathf.Round(Random.Range(0, forestElementTemplates.Count - 1));
-    Debug.Log("index: " + index);
+    int index = (int)Mathf.Round(Random.Range(0, forestElementTemplates.Count));
     GameObject forestElement = Instantiate(forestElementTemplates[index], new Vector3(x, y, 0f), gameObject.transform.rotation);
 
     return forestElement;
