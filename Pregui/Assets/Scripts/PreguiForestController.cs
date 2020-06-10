@@ -15,6 +15,7 @@ public class PreguiForestController : MonoBehaviour
   public GameObject flowersHand;
   public GameObject flowersArm;
   private float[] flowersRotations;
+  private string state;
 
   void Awake() {
     instance = this;
@@ -23,6 +24,7 @@ public class PreguiForestController : MonoBehaviour
     animator = gameObject.GetComponent<Animator>();
     theRB = gameObject.GetComponent<Rigidbody2D>();
     flowersRotations = new float[] { 0, -20, 20, -40, 40 };
+    state = "idle";
   }
   // Start is called before the first frame update
   void Start()
@@ -37,19 +39,24 @@ public class PreguiForestController : MonoBehaviour
       direction = new Vector2(velocity, 0f);
       scale = new Vector3(1f, 1f, 1f);
       animator.SetBool("walking", true);
+      state = "walking";
     } else if(Input.GetKey(KeyCode.LeftArrow)) {
       direction = new Vector2(-velocity, 0f);
       scale = new Vector3(-1f, 1f, 1f);
       animator.SetBool("walking", true);
+      state = "walking";
     } else if(Input.GetKey(KeyCode.UpArrow)) {
       direction = new Vector2(0f, velocity);
       animator.SetBool("walking", true);
+      state = "walking";
     } else if(Input.GetKey(KeyCode.DownArrow)) {
       direction = new Vector2(0f, -velocity);
       animator.SetBool("walking", true);
+      state = "walking";
     } else {
       direction = Vector2.zero;
       animator.SetBool("walking", false);
+      state = "idle";
     }
 
     theRB.velocity = direction;
@@ -96,5 +103,12 @@ public class PreguiForestController : MonoBehaviour
     flower.transform.rotation = Quaternion.Euler(flower.transform.rotation.x, flower.transform.rotation.y, flowersRotations[flowers.Count]);
     flowers.Add(flower);
     DataStorage.IncreaseNumOfFlowers();
+  }
+
+  public void GetInHouse() {
+    if(state != "gettingInHouse") {
+      state = "gettingInHouse";
+      CanvasController.instance.LoadSceneInHouse();
+    }
   }
 }

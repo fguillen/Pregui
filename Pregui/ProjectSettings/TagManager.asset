@@ -9,6 +9,7 @@ TagManager:
   - PreguiHand
   - Canvas
   - PutFlowersHand
+  - PreguiGetInHandler
   layers:
   - Default
   - TransparentFX

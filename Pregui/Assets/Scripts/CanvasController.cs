@@ -7,6 +7,7 @@ public class CanvasController : MonoBehaviour
 {
   public static CanvasController instance;
   private Animator animator;
+  private string nextScene;
 
   void Awake() {
     instance = this;
@@ -25,15 +26,25 @@ public class CanvasController : MonoBehaviour
 
   }
 
-  public void WhiteFadeIn(){
+  private void WhiteFadeIn(){
     animator.SetTrigger("whiteFadeIn");
   }
 
-  public void WhiteFadeOut(){
+  private void WhiteFadeOut(){
     animator.SetTrigger("whiteFadeOut");
   }
 
   public void LoadSceneForest() {
-    SceneManager.LoadScene("Forest");
+    nextScene = "Forest";
+    WhiteFadeIn();
+  }
+
+  public void LoadSceneInHouse() {
+    nextScene = "InHouse";
+    WhiteFadeIn();
+  }
+
+  public void LoadNextScene(){
+    SceneManager.LoadScene(nextScene);
   }
 }

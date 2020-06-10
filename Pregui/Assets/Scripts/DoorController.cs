@@ -42,7 +42,7 @@ public class DoorController : MonoBehaviour
   void CheckIfPreguiIsInTheDoor() {
     if(state == "open"){
       if(doorFrameCollider.bounds.Intersects(preguiFrameCollider.bounds)) {
-        CanvasController.instance.WhiteFadeIn();
+        CanvasController.instance.LoadSceneForest();
       }
     }
   }
