@@ -19,7 +19,7 @@ public class ForestController : MonoBehaviour
 
   void Awake(){
     forestElements = new List<GameObject>();
-    cellElements = new string[] {"tree", "flower", "nothing", "nothing", "nothing", "nothing"};
+    cellElements = new string[] {"tree", "flower", "flower", "flower", "nothing", "nothing"};
     GenerateForest();
   }
 

@@ -7,6 +7,7 @@ public class HouseForestController : MonoBehaviour
   private string state;
   public GameObject doorHandler;
   public GameObject pregui;
+  public GameObject bottomHandler;
   private Animator animator;
 
   void Awake() {
@@ -17,7 +18,7 @@ public class HouseForestController : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
-    SpriteRenderOrderSystem.instance.Order(gameObject);
+    SpriteRenderOrderSystem.instance.Order(gameObject, bottomHandler);
   }
 
   // Update is called once per frame

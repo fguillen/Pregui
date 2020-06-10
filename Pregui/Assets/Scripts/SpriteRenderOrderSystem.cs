@@ -19,17 +19,42 @@ public class SpriteRenderOrderSystem : MonoBehaviour
     OrderSpriteMeshInstances(gameObject);
   }
 
+  public void Order(GameObject gameObject, GameObject bottomHandler){
+    OrderSpriteRenderers(gameObject, bottomHandler);
+    OrderSpriteMeshInstances(gameObject);
+  }
+
   void OrderSpriteRenderers(GameObject gameObject){
     SpriteRenderer[] elements = gameObject.GetComponentsInChildren<SpriteRenderer>(true);
 
     if(elements.Count() > 0) {
-      int minSortingOrder = (int)elements.Min(element => element.sortingOrder);
       float minY = (float)elements.Min(element => BottomY(element));
+      Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
 
-      // Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
+      SortingOrderStartingFrom(gameObject, (int)(minY * -1000));
+    }
+  }
 
-      foreach(SpriteRenderer element in elements){
-        BottomY(element);
+  void OrderSpriteRenderers(GameObject gameObject, GameObject bottomHandler){
+    SpriteRenderer[] elements = gameObject.GetComponentsInChildren<SpriteRenderer>(true);
+
+    if(elements.Count() > 0) {
+      float minY = bottomHandler.transform.position.y;
+      Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
+
+      SortingOrderStartingFrom(gameObject, (int)(minY * -1000));
+    }
+  }
+
+  void OrderSpriteMeshInstances(GameObject gameObject){
+    SpriteMeshInstance[] elements = gameObject.GetComponentsInChildren<SpriteMeshInstance>(true);
+    if(elements.Count() > 0) {
+      float minY = (float)elements.Min(element => BottomY(element));
+      Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
+
+      int minSortingOrder = (int)elements.Min(element => element.sortingOrder);
+
+      foreach(SpriteMeshInstance element in elements){
         int finalSortingOrder = element.sortingOrder - minSortingOrder; // Normalize
         finalSortingOrder += (int)(minY * -1000);
         element.sortingOrder = finalSortingOrder;
@@ -37,17 +62,37 @@ public class SpriteRenderOrderSystem : MonoBehaviour
     }
   }
 
-  void OrderSpriteMeshInstances(GameObject gameObject){
-    SpriteMeshInstance[] elements = gameObject.GetComponentsInChildren<SpriteMeshInstance>(true);
+  public static int MinSortingOrder(GameObject gameObject){
+    SpriteRenderer[] elements = gameObject.GetComponentsInChildren<SpriteRenderer>(true);
+
+    if(elements.Count() > 0) {
+      return (int)elements.Min(element => element.sortingOrder);
+    } else {
+      return 0;
+    }
+  }
+
+  public static int MaxSortingOrder(GameObject gameObject){
+    SpriteRenderer[] elements = gameObject.GetComponentsInChildren<SpriteRenderer>(true);
+
+    if(elements.Count() > 0) {
+      return (int)elements.Max(element => element.sortingOrder);
+    } else {
+      return 0;
+    }
+  }
+
+  public static void SortingOrderStartingFrom(GameObject gameObject, int minOrder){
+    Debug.Log("SortingOrderStartingFrom: " + minOrder + ", Tag: " + gameObject.tag);
+    SpriteRenderer[] elements = gameObject.GetComponentsInChildren<SpriteRenderer>(true);
+
     if(elements.Count() > 0) {
       int minSortingOrder = (int)elements.Min(element => element.sortingOrder);
-      float minY = (float)elements.Min(element => BottomY(element));
 
-      // Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
-
-      foreach(SpriteMeshInstance element in elements){
+      foreach(SpriteRenderer element in elements){
         int finalSortingOrder = element.sortingOrder - minSortingOrder; // Normalize
-        finalSortingOrder += (int)(minY * -1000);
+        finalSortingOrder += minOrder;
+        Debug.Log("finalSortingOrder: " + finalSortingOrder);
         element.sortingOrder = finalSortingOrder;
       }
     }

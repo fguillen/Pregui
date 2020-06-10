@@ -35,41 +35,43 @@ public class PreguiForestController : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    if(Input.GetKey(KeyCode.RightArrow)) {
-      direction = new Vector2(velocity, 0f);
-      scale = new Vector3(1f, 1f, 1f);
-      animator.SetBool("walking", true);
-      state = "walking";
-    } else if(Input.GetKey(KeyCode.LeftArrow)) {
-      direction = new Vector2(-velocity, 0f);
-      scale = new Vector3(-1f, 1f, 1f);
-      animator.SetBool("walking", true);
-      state = "walking";
-    } else if(Input.GetKey(KeyCode.UpArrow)) {
-      direction = new Vector2(0f, velocity);
-      animator.SetBool("walking", true);
-      state = "walking";
-    } else if(Input.GetKey(KeyCode.DownArrow)) {
-      direction = new Vector2(0f, -velocity);
-      animator.SetBool("walking", true);
-      state = "walking";
-    } else {
-      direction = Vector2.zero;
-      animator.SetBool("walking", false);
-      state = "idle";
-    }
+    if(state != "gettingInHouse") {
+      if(Input.GetKey(KeyCode.RightArrow)) {
+        direction = new Vector2(velocity, 0f);
+        scale = new Vector3(1f, 1f, 1f);
+        animator.SetBool("walking", true);
+        state = "walking";
+      } else if(Input.GetKey(KeyCode.LeftArrow)) {
+        direction = new Vector2(-velocity, 0f);
+        scale = new Vector3(-1f, 1f, 1f);
+        animator.SetBool("walking", true);
+        state = "walking";
+      } else if(Input.GetKey(KeyCode.UpArrow)) {
+        direction = new Vector2(0f, velocity);
+        animator.SetBool("walking", true);
+        state = "walking";
+      } else if(Input.GetKey(KeyCode.DownArrow)) {
+        direction = new Vector2(0f, -velocity);
+        animator.SetBool("walking", true);
+        state = "walking";
+      } else {
+        direction = Vector2.zero;
+        animator.SetBool("walking", false);
+        state = "idle";
+      }
 
-    theRB.velocity = direction;
-    gameObject.transform.localScale = scale;
+      theRB.velocity = direction;
+      gameObject.transform.localScale = scale;
 
-    if(Input.GetKeyDown(KeyCode.Space)) {
-      BendDown();
+      if(Input.GetKeyDown(KeyCode.Space)) {
+        BendDown();
+      }
     }
 
     CenterFlowers();
     ShowFlowersArm();
 
-    if(direction.y != 0f) {
+    if(state == "walking") {
       RenderOrder();
     }
   }
@@ -108,7 +110,9 @@ public class PreguiForestController : MonoBehaviour
   public void GetInHouse() {
     if(state != "gettingInHouse") {
       state = "gettingInHouse";
-      CanvasController.instance.LoadSceneInHouse();
+      animator.SetBool("walking", true);
+      theRB.velocity = Vector2.zero;
+      PreguiGetInHouseController.instance.PreguiGetInHouseAnimation();
     }
   }
 }

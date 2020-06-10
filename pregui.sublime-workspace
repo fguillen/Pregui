@@ -789,8 +789,9 @@
 	},
 	"file_history":
 	[
-		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Anima2D/Scripts/Editor/Hole.cs",
 		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/HouseForestController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/ForestController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Anima2D/Scripts/Editor/Hole.cs",
 		"/Users/fernando.guillen/Development/Pregui/pregui.sublime-project",
 		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/FlowerController.cs",
 		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/DoorController.cs",
@@ -915,8 +916,7 @@
 		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/models/reaction.rb",
 		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/test/fixtures/notifier/on_reaction_received.txt",
 		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/controllers/front/reactions_controller.rb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/test/controllers/front/reactions_controller_test.rb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/controllers/front/appreciations_controller.rb"
+		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/test/controllers/front/reactions_controller_test.rb"
 	],
 	"find":
 	{
@@ -938,6 +938,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"1",
 			"Debug.Log",
 			"demographics_mapper",
 			"demo",
@@ -1023,6 +1024,14 @@
 		"selected_items":
 		[
 			[
+				"fore",
+				"ForestController.cs"
+			],
+			[
+				"hous",
+				"HouseForestController.cs"
+			],
+			[
 				"ho",
 				"Pregui/Assets/Scripts/HouseForestController.cs"
 			],
@@ -1081,10 +1090,6 @@
 			[
 				"pregforecon",
 				"Pregui/Assets/PreguiForestController.cs"
-			],
-			[
-				"fore",
-				"Pregui/Assets/ForestController.cs"
 			],
 			[
 				"ordersys",
@@ -1529,10 +1534,6 @@
 			[
 				"edi",
 				"app/views/admin/admin_users/edit.html.erb"
-			],
-			[
-				"action_ma",
-				"app/mailers/application_mailer.rb"
 			]
 		],
 		"width": 0.0
