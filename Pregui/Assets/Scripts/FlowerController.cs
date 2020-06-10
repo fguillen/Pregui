@@ -35,8 +35,6 @@ public class FlowerController : MonoBehaviour
     {
       animator.SetTrigger("Bump");
     }
-
-    RenderOrder();
   }
 
   void RenderOrder() {

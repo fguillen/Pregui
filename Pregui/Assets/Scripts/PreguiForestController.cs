@@ -78,6 +78,7 @@ public class PreguiForestController : MonoBehaviour
 
   void RenderOrder() {
     SpriteRenderOrderSystem.instance.Order(gameObject);
+    RenderOrderFlowers();
   }
 
   void ShowFlowersArm() {
@@ -85,6 +86,13 @@ public class PreguiForestController : MonoBehaviour
     //   Debug.Log("ShowFlowersArm");
       // flowersArm.gameObject.SetActive(true);
     // }
+  }
+
+  public void RenderOrderFlowers() {
+    int minOrder = SpriteRenderOrderSystem.MinSortingOrder(gameObject);
+    foreach(var flower in flowers){
+      SpriteRenderOrderSystem.SortingOrderStartingFrom(flower, minOrder);
+    }
   }
 
   void CenterFlowers(){

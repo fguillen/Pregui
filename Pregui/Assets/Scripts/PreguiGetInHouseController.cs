@@ -61,6 +61,8 @@ public class PreguiGetInHouseController : MonoBehaviour
     SpriteRenderOrderSystem.SortingOrderStartingFrom(pregui, houseBackOrder + 1);
     int preguiMaxOrder = SpriteRenderOrderSystem.MaxSortingOrder(pregui);
 
+    PreguiForestController.instance.RenderOrderFlowers();
+
     Debug.Log("houseBackOrder: " + houseBackOrder);
     Debug.Log("preguiMaxOrder: " + preguiMaxOrder);
 
