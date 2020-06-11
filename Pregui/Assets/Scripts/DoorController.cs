@@ -35,6 +35,7 @@ public class DoorController : MonoBehaviour
   }
 
   void Open(){
+    AudioInHouseController.instance.PlayOpenDoor();
     animator.SetBool("open", true);
     state = "open";
   }

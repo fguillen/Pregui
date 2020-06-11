@@ -126,6 +126,8 @@ public class PreguiForestController : MonoBehaviour
       flower.transform.rotation = Quaternion.Euler(flower.transform.rotation.x, flower.transform.rotation.y, flowersRotations[flowers.Count]);
       flowers.Add(flower);
       DataStorage.IncreaseNumOfFlowers();
+    } else {
+      AudioController.instance.PlayNo();
     }
   }
 

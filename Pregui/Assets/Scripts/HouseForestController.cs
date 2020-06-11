@@ -38,11 +38,13 @@ public class HouseForestController : MonoBehaviour
   }
 
   void CloseDoor() {
+    AudioController.instance.PlayCloseDoor();
     animator.SetBool("doorClosed", true);
     state = "doorClosed";
   }
 
   void OpenDoor() {
+    AudioController.instance.PlayOpenDoor();
     animator.SetBool("doorClosed", false);
     state = "doorOpen";
   }

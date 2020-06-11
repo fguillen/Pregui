@@ -9,6 +9,7 @@ public class AudioInHouseController : MonoBehaviour
   public AudioSource music;
   public AudioSource putFlowers;
   public AudioSource openDoor;
+  public AudioSource closeDoor;
 
   private void Awake()
   {
@@ -40,6 +41,11 @@ public class AudioInHouseController : MonoBehaviour
   public void PlayOpenDoor()
   {
     openDoor.Play();
+  }
+
+  public void PlayCloseDoor()
+  {
+    closeDoor.Play();
   }
 
 }

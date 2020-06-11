@@ -10,6 +10,9 @@ public class AudioController : MonoBehaviour
   public AudioSource flowerBorn;
   public AudioSource grunt;
   public AudioSource music;
+  public AudioSource openDoor;
+  public AudioSource closeDoor;
+  public AudioSource no;
 
   private void Awake()
   {
@@ -46,6 +49,21 @@ public class AudioController : MonoBehaviour
   public void PlayMusic()
   {
     music.Play();
+  }
+
+  public void PlayOpenDoor()
+  {
+    openDoor.Play();
+  }
+
+  public void PlayCloseDoor()
+  {
+    closeDoor.Play();
+  }
+
+  public void PlayNo()
+  {
+    no.Play();
   }
 
 }

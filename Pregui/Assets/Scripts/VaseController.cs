@@ -19,6 +19,8 @@ public class VaseController : MonoBehaviour
   }
 
   void DepositFlowers(List<GameObject> flowers) {
+    AudioInHouseController.instance.PlayPutFlowers();
+
     foreach(GameObject flower in flowers){
       flower.transform.position = flowersHandler.transform.position;
       var renderSprite = flower.GetComponentsInChildren<SpriteRenderer>()[0];
