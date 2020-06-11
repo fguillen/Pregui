@@ -9,6 +9,7 @@ public class AudioController : MonoBehaviour
   public AudioSource pickupFlower;
   public AudioSource flowerBorn;
   public AudioSource grunt;
+  public AudioSource music;
 
   private void Awake()
   {
@@ -18,7 +19,7 @@ public class AudioController : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
-
+    PlayMusic();
   }
 
   // Update is called once per frame
@@ -40,6 +41,11 @@ public class AudioController : MonoBehaviour
   public void PlayGrunt()
   {
     grunt.Play();
+  }
+
+  public void PlayMusic()
+  {
+    music.Play();
   }
 
 }
