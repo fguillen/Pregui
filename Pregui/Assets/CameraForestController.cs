@@ -21,9 +21,6 @@ public class CameraForestController : MonoBehaviour
     float preguiDistantX = Mathf.Abs(gameObject.transform.position.x - pregui.transform.position.x);
     float preguiDistantY = Mathf.Abs(gameObject.transform.position.y - pregui.transform.position.y);
 
-    Debug.Log("preguiDistantX: " + preguiDistantX);
-    Debug.Log("preguiDistantY: " + preguiDistantY);
-
     if(preguiDistantX > maxDistantToPreguiX) {
       gameObject.transform.position = new Vector3(Mathf.MoveTowards(gameObject.transform.position.x, pregui.transform.position.x, cameraVelocity), gameObject.transform.position.y, gameObject.transform.position.z);
     }

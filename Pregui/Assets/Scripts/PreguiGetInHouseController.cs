@@ -51,7 +51,7 @@ public class PreguiGetInHouseController : MonoBehaviour
 
     if(state == "towardsPosition3") {
       pregui.transform.localScale = new Vector3(1f, 1f, 1f);;
-      CanvasController.instance.LoadSceneInHouse();
+      CanvasForestController.instance.LoadSceneInHouse();
     }
   }
 

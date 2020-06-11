@@ -112,11 +112,13 @@ public class PreguiForestController : MonoBehaviour
 
   public void PickupFlower(GameObject flower){
     Debug.Log("PreguiForestController.PickupFlower");
-    AudioController.instance.PlayPickupFlower();
-    ((FlowerController)flower.GetComponent(typeof(FlowerController))).DeactivePickupCollider();
-    flower.transform.rotation = Quaternion.Euler(flower.transform.rotation.x, flower.transform.rotation.y, flowersRotations[flowers.Count]);
-    flowers.Add(flower);
-    DataStorage.IncreaseNumOfFlowers();
+    if(flowers.Count < flowersRotations.Length) {
+      AudioController.instance.PlayPickupFlower();
+      ((FlowerController)flower.GetComponent(typeof(FlowerController))).DeactivePickupCollider();
+      flower.transform.rotation = Quaternion.Euler(flower.transform.rotation.x, flower.transform.rotation.y, flowersRotations[flowers.Count]);
+      flowers.Add(flower);
+      DataStorage.IncreaseNumOfFlowers();
+    }
   }
 
   public void GetInHouse() {

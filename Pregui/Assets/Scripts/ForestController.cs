@@ -19,7 +19,7 @@ public class ForestController : MonoBehaviour
 
   void Awake(){
     forestElements = new List<GameObject>();
-    cellElements = new string[] {"tree", "flower", "flower", "flower", "nothing", "nothing"};
+    cellElements = new string[] {"element", "element", "nothing", "nothing", "nothing", "nothing"};
     GenerateForest();
   }
 
@@ -57,7 +57,7 @@ public class ForestController : MonoBehaviour
         float noise = Random.Range(-5, 5) / 10f;
         switch (cellElements[index])
         {
-          case "tree":
+          case "element":
             float xFinal = (float)x + noise;
             float yFinal = (float)y + noise;
 
