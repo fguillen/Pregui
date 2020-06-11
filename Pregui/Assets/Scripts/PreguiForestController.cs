@@ -40,31 +40,39 @@ public class PreguiForestController : MonoBehaviour
 
   void Move() {
     if(state != "gettingInHouse") {
+
+      direction = Vector2.zero;
+      animator.SetBool("walking", false);
+      state = "idle";
+
       if(Input.GetKey(KeyCode.RightArrow)) {
-        direction = new Vector2(velocity, 0f);
+        direction = new Vector2(1, direction.y);
         scale = new Vector3(1f, 1f, 1f);
         animator.SetBool("walking", true);
         state = "walking";
-      } else if(Input.GetKey(KeyCode.LeftArrow)) {
-        direction = new Vector2(-velocity, 0f);
+      }
+
+      if(Input.GetKey(KeyCode.LeftArrow)) {
+        direction = new Vector2(-1, direction.y);
         scale = new Vector3(-1f, 1f, 1f);
         animator.SetBool("walking", true);
         state = "walking";
-      } else if(Input.GetKey(KeyCode.UpArrow)) {
-        direction = new Vector2(0f, velocity);
-        animator.SetBool("walking", true);
-        state = "walking";
-      } else if(Input.GetKey(KeyCode.DownArrow)) {
-        direction = new Vector2(0f, -velocity);
-        animator.SetBool("walking", true);
-        state = "walking";
-      } else {
-        direction = Vector2.zero;
-        animator.SetBool("walking", false);
-        state = "idle";
       }
 
-      theRB.velocity = direction;
+      if(Input.GetKey(KeyCode.UpArrow)) {
+        direction = new Vector2(direction.x, 1);
+        animator.SetBool("walking", true);
+        state = "walking";
+      }
+
+      if(Input.GetKey(KeyCode.DownArrow)) {
+        direction = new Vector2(direction.x, -1);
+        animator.SetBool("walking", true);
+        state = "walking";
+      }
+
+      direction.Normalize();
+      theRB.velocity = direction * velocity;
       gameObject.transform.localScale = scale;
 
       if(Input.GetKeyDown(KeyCode.Space)) {

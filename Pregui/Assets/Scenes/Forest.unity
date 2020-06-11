@@ -2318,7 +2318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cf9554291dd24b90b2bb2a6c9d8e240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 1
+  velocity: 0.5
   flowers: []
   flowersHand: {fileID: 1763781186}
   flowersArm: {fileID: 68335829}
