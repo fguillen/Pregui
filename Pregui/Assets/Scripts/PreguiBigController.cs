@@ -51,7 +51,7 @@ public class PreguiBigController : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    if(!DataStorage.paused) {
+    if(!DataStorage.paused && state != "happy") {
       if(Input.GetKey(KeyCode.RightArrow)) {
         direction = new Vector2(velocity, 0f);
         scale = new Vector3(-1f, 1f, 1f);
