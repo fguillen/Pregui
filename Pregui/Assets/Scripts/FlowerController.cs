@@ -23,17 +23,23 @@ public class FlowerController : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
+    if(!DataStorage.paused) {
+      ShouldBorn();
+    }
+
+    if(state == "unborn" && Random.Range(1, 50) == 1)
+    {
+      animator.SetTrigger("Bump");
+    }
+  }
+
+  void ShouldBorn() {
     if(state == "unborn") {
       secondsToBorn -= Time.deltaTime;
 
       if(secondsToBorn <= 0){
         Born();
       }
-    }
-
-    if(state == "unborn" && Random.Range(1, 50) == 1)
-    {
-      animator.SetTrigger("Bump");
     }
   }
 

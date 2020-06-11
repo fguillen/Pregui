@@ -29,7 +29,7 @@ public class SpriteRenderOrderSystem : MonoBehaviour
 
     if(elements.Count() > 0) {
       float minY = (float)elements.Min(element => BottomY(element));
-      Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
+      // Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
 
       SortingOrderStartingFrom(gameObject, (int)(minY * -1000));
     }
@@ -40,7 +40,7 @@ public class SpriteRenderOrderSystem : MonoBehaviour
 
     if(elements.Count() > 0) {
       float minY = bottomHandler.transform.position.y;
-      Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
+      // Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
 
       SortingOrderStartingFrom(gameObject, (int)(minY * -1000));
     }
@@ -50,7 +50,7 @@ public class SpriteRenderOrderSystem : MonoBehaviour
     SpriteMeshInstance[] elements = gameObject.GetComponentsInChildren<SpriteMeshInstance>(true);
     if(elements.Count() > 0) {
       float minY = (float)elements.Min(element => BottomY(element));
-      Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
+      // Instantiate(baseLine, new Vector3(gameObject.transform.position.x, minY, gameObject.transform.position.z), gameObject.transform.rotation);
 
       int minSortingOrder = (int)elements.Min(element => element.sortingOrder);
 
@@ -83,7 +83,6 @@ public class SpriteRenderOrderSystem : MonoBehaviour
   }
 
   public static void SortingOrderStartingFrom(GameObject gameObject, int minOrder){
-    Debug.Log("SortingOrderStartingFrom: " + minOrder + ", Tag: " + gameObject.tag);
     SpriteRenderer[] elements = gameObject.GetComponentsInChildren<SpriteRenderer>(true);
 
     if(elements.Count() > 0) {
@@ -92,7 +91,6 @@ public class SpriteRenderOrderSystem : MonoBehaviour
       foreach(SpriteRenderer element in elements){
         int finalSortingOrder = element.sortingOrder - minSortingOrder; // Normalize
         finalSortingOrder += minOrder;
-        Debug.Log("finalSortingOrder: " + finalSortingOrder);
         element.sortingOrder = finalSortingOrder;
       }
     }

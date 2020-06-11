@@ -21,7 +21,6 @@ public class PickupPointController : MonoBehaviour
   {
     if (other.CompareTag("Flower"))
     {
-      Debug.Log("PickupPointController.PickupFlower");
       PreguiForestController.instance.PickupFlower(other.gameObject);
     }
   }

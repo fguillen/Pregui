@@ -5,10 +5,11 @@ using UnityEngine;
 public class DataStorage : ScriptableObject
 {
   public static int numOfFlowers = 0;
+  public static string gameState = "init";
+  public static bool paused = true;
 
   public static void IncreaseNumOfFlowers(){
     numOfFlowers ++;
-    Debug.Log("increase numOfFlowers: " + numOfFlowers);
   }
 
   public static bool HasFlowers(){

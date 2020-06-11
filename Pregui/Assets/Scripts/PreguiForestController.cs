@@ -35,6 +35,12 @@ public class PreguiForestController : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
+    if(!DataStorage.paused) {
+      Move();
+    }
+  }
+
+  void Move() {
     if(state != "gettingInHouse") {
       if(Input.GetKey(KeyCode.RightArrow)) {
         direction = new Vector2(velocity, 0f);

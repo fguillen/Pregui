@@ -51,32 +51,34 @@ public class PreguiBigController : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    if(Input.GetKey(KeyCode.RightArrow)) {
-      direction = new Vector2(velocity, 0f);
-      scale = new Vector3(-1f, 1f, 1f);
-      animator.SetBool("walking", true);
-    } else if(Input.GetKey(KeyCode.LeftArrow)) {
-      direction = new Vector2(-velocity, 0f);
-      scale = new Vector3(1f, 1f, 1f);
-      animator.SetBool("walking", true);
-    } else {
-      direction = Vector2.zero;
-      animator.SetBool("walking", false);
-    }
-
-    theRB.velocity = direction;
-    gameObject.transform.localScale = scale;
-
-    if(Input.GetKeyDown(KeyCode.Space)) {
-      if(state == "withFlowers") {
-        ActionTryToPutFlowersInTheVase();
+    if(!DataStorage.paused) {
+      if(Input.GetKey(KeyCode.RightArrow)) {
+        direction = new Vector2(velocity, 0f);
+        scale = new Vector3(-1f, 1f, 1f);
+        animator.SetBool("walking", true);
+      } else if(Input.GetKey(KeyCode.LeftArrow)) {
+        direction = new Vector2(-velocity, 0f);
+        scale = new Vector3(1f, 1f, 1f);
+        animator.SetBool("walking", true);
       } else {
-        ActionTryOpenDoor();
+        direction = Vector2.zero;
+        animator.SetBool("walking", false);
       }
-    }
 
-    if(state == "withFlowers") {
-      CenterFlowers();
+      theRB.velocity = direction;
+      gameObject.transform.localScale = scale;
+
+      if(Input.GetKeyDown(KeyCode.Space)) {
+        if(state == "withFlowers") {
+          ActionTryToPutFlowersInTheVase();
+        } else {
+          ActionTryOpenDoor();
+        }
+      }
+
+      if(state == "withFlowers") {
+        CenterFlowers();
+      }
     }
   }
 
@@ -120,7 +122,6 @@ public class PreguiBigController : MonoBehaviour
 
   void RenderFigure(){
     if(state == "normal") {
-      Debug.Log("normal");
       figure.SetActive(true);
       figureWithFlowers.SetActive(false);
       armWithFlowers.SetActive(false);
@@ -128,7 +129,6 @@ public class PreguiBigController : MonoBehaviour
     }
 
     if(state == "tryOpenDoor") {
-      Debug.Log("tryOpenDoor");
       figure.SetActive(false);
       figureWithFlowers.SetActive(true);
       armWithFlowers.SetActive(true);

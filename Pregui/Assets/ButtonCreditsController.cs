@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GetInHandlerController : MonoBehaviour
+public class ButtonCreditsController : MonoBehaviour
 {
   // Start is called before the first frame update
   void Start()
@@ -16,9 +16,8 @@ public class GetInHandlerController : MonoBehaviour
 
   }
 
-  void OnTriggerEnter2D(Collider2D other) {
-    if(other.CompareTag("PreguiGetInHandler")){
-      PreguiForestController.instance.GetInHouse();
-    }
+  void Action(){
+    Debug.Log("ButtonCreditsController.Action()");
+    CanvasController.instance.LoadCredits();
   }
 }
