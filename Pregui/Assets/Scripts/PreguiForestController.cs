@@ -35,9 +35,7 @@ public class PreguiForestController : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    if(!DataStorage.paused) {
-      Move();
-    }
+    Move();
   }
 
   void Move() {

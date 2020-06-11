@@ -23,9 +23,7 @@ public class FlowerController : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    if(!DataStorage.paused) {
-      ShouldBorn();
-    }
+    ShouldBorn();
 
     if(state == "unborn" && Random.Range(1, 50) == 1)
     {
