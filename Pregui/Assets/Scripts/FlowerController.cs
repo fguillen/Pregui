@@ -16,7 +16,7 @@ public class FlowerController : MonoBehaviour
     animator = gameObject.GetComponent<Animator>();
     state = "unborn";
     flower.SetActive(false);
-    secondsToBorn = Random.Range(1, 1);
+    secondsToBorn = Random.Range(5, 120);
     RenderOrder();
   }
 
