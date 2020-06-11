@@ -3105,19 +3105,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 250296829769378802, guid: 56fd41900aef74fd380820d0b6f41cbc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -263
+      objectReference: {fileID: 0}
+    - target: {fileID: 250296829769378802, guid: 56fd41900aef74fd380820d0b6f41cbc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -170
+      objectReference: {fileID: 0}
     - target: {fileID: 384324020354259382, guid: 56fd41900aef74fd380820d0b6f41cbc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 384324020531631776, guid: 56fd41900aef74fd380820d0b6f41cbc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384324020759360555, guid: 56fd41900aef74fd380820d0b6f41cbc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 384324020844871914, guid: 56fd41900aef74fd380820d0b6f41cbc,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 384324021366082224, guid: 56fd41900aef74fd380820d0b6f41cbc,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 384324021366082224, guid: 56fd41900aef74fd380820d0b6f41cbc,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1280
+      objectReference: {fileID: 0}
+    - target: {fileID: 384324021366082224, guid: 56fd41900aef74fd380820d0b6f41cbc,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 720
+      objectReference: {fileID: 0}
+    - target: {fileID: 384324021366082225, guid: 56fd41900aef74fd380820d0b6f41cbc,
+        type: 3}
+      propertyPath: m_RenderMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 384324021366082226, guid: 56fd41900aef74fd380820d0b6f41cbc,
@@ -3225,6 +3260,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 384324021366082226, guid: 56fd41900aef74fd380820d0b6f41cbc,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384324021366082226, guid: 56fd41900aef74fd380820d0b6f41cbc,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384324021366082226, guid: 56fd41900aef74fd380820d0b6f41cbc,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 384324021366082228, guid: 56fd41900aef74fd380820d0b6f41cbc,
         type: 3}
       propertyPath: m_Name
@@ -3250,9 +3300,15 @@ PrefabInstance:
         Music by Gabriel Gallardo https://soundcloud.com/gabgallard
 
         Programming
-        and Graphics by Fernando Guillen
+        and Graphics by Fernando Guillen https://arturitoproductions.itch.io/
 
-        Sound effects from https://freesound.org'
+        Sound
+        effects from https://freesound.org'
+      objectReference: {fileID: 0}
+    - target: {fileID: 384324021730749317, guid: 56fd41900aef74fd380820d0b6f41cbc,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56fd41900aef74fd380820d0b6f41cbc, type: 3}
