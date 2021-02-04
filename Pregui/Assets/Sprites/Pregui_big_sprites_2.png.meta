@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: -8502104621769807889
     second: DoorOpen
+  - first:
+      213: -6703752473321345589
+    second: Wall_01
+  - first:
+      213: 2113582539318421993
+    second: Wall_02
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -166,6 +172,48 @@ TextureImporter:
       bones: []
       spriteID: fe7243084e4720a80800000000000000
       internalID: -8502104621769807889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_01
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 104
+        width: 35
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcde88db4ac77f2a0800000000000000
+      internalID: -6703752473321345589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_02
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 106
+        width: 45
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9ea8b0f14f45d10800000000000000
+      internalID: 2113582539318421993
       vertices: []
       indices: 
       edges: []

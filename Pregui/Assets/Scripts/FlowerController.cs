@@ -18,6 +18,7 @@ public class FlowerController : MonoBehaviour
     flower.SetActive(false);
     secondsToBorn = Random.Range(5, 60);
     RenderOrder();
+    DeactivePickupCollider();
   }
 
   // Update is called once per frame
@@ -48,6 +49,7 @@ public class FlowerController : MonoBehaviour
   void Born(){
     animator.SetTrigger("GiveBirth");
     state = "born";
+    ActivatePickupCollider();
   }
 
   void BornSound(){
@@ -56,5 +58,9 @@ public class FlowerController : MonoBehaviour
 
   public void DeactivePickupCollider(){
     GetComponent<CircleCollider2D>().enabled = false;
+  }
+
+  public void ActivatePickupCollider(){
+    GetComponent<CircleCollider2D>().enabled = true;
   }
 }

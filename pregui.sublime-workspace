@@ -4,20 +4,36 @@
 		"selected_items":
 		[
 			[
+				"Au",
+				"AudioInHouseController\tAudioInHouseController"
+			],
+			[
+				"Pla",
+				"PlayMusic()\tvoid"
+			],
+			[
+				"flower",
+				"flowersRotations\tfloat[]"
+			],
+			[
+				"pre",
+				"preguiDistantX\tfloat"
+			],
+			[
+				"Load",
+				"LoadSceneForest()\tvoid"
+			],
+			[
+				"button",
+				"buttonSelected\tint"
+			],
+			[
 				"Pre",
 				"PreguiBigController\tPreguiBigController"
 			],
 			[
-				"flower",
-				"flowersHandler\tGameObject"
-			],
-			[
 				"Action",
 				"ActionTryToPutFlowersInTheVase()\tvoid"
-			],
-			[
-				"pre",
-				"preguiFrameCollider\tBoxCollider2D"
 			],
 			[
 				"door",
@@ -498,22 +514,6 @@
 			[
 				"chapters",
 				"chaptersHash"
-			],
-			[
-				"Buy",
-				"BuyBook"
-			],
-			[
-				"Re",
-				"ReadBook"
-			],
-			[
-				"go",
-				"goToChapter"
-			],
-			[
-				"chapter",
-				"chapterId"
 			]
 		]
 	},
@@ -789,21 +789,36 @@
 	},
 	"file_history":
 	[
-		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/HouseForestController.cs",
-		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/ForestController.cs",
-		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Anima2D/Scripts/Editor/Hole.cs",
-		"/Users/fernando.guillen/Development/Pregui/pregui.sublime-project",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/AudioInHouseController.cs",
 		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/FlowerController.cs",
 		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/DoorController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/AudioController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/PreguiBigController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/PreguiForestController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/DataStorage.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/AudioInHouseController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/CreditsController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/CanvasController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/CanvasForestController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/CameraForestController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/ForestController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/PreguiGetInHouseController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/SpriteRenderOrderSystem.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/MenuController.cs",
+		"/Users/builduser/buildslave/unity/build/Editor/Mono/SceneView/SceneView.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/PickupPointController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/GetInHandlerController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/ButtonCreditsController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/HouseForestController.cs",
+		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Anima2D/Scripts/Editor/Hole.cs",
+		"/Users/fernando.guillen/Development/Pregui/pregui.sublime-project",
 		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/VaseController.cs",
 		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/PreguiController.cs",
-		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/Scripts/DataStorage.cs",
 		"/tmp/subl stdin Lrktyq.txt",
 		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/DataStorage.cs",
 		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/DoorController.cs",
 		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/CanvasController.cs",
 		"/Users/builduser/buildslave/unity/build/Editor/Mono/Animation/AnimationWindow/AnimationWindowControl.cs",
-		"/Users/builduser/buildslave/unity/build/Editor/Mono/SceneView/SceneView.cs",
 		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/TreeController.cs",
 		"/tmp/subl stdin okzE7o.txt",
 		"/Users/fernando.guillen/Development/Pregui/Pregui/Assets/PreguiForestController.cs",
@@ -901,22 +916,7 @@
 		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/mailers/application_mailer.rb",
 		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/config/initializers/action_mailer.rb",
 		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/db/migrate/20200521200137_create_reminders.rb",
-		"/tmp/subl stdin nvds54.txt",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/views/front/appreciations/show.html.erb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/config/environments/development.rb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/.env.development.local",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/config/environments/production.rb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/views/admin/admin_users/edit.html.erb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/views/layouts/front/_header.html.erb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/views/layouts/front/_menu.html.erb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/views/notifier/on_reaction_received.text.erb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/views/front/appreciations/_list.html.erb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/test/models/reaction_test.rb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/models/notification_preference.rb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/models/reaction.rb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/test/fixtures/notifier/on_reaction_received.txt",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/app/controllers/front/reactions_controller.rb",
-		"/Users/fernando.guillen/Development/Dalia/Repos/AppreciationsBoard/test/controllers/front/reactions_controller_test.rb"
+		"/tmp/subl stdin nvds54.txt"
 	],
 	"find":
 	{
@@ -938,6 +938,31 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"PickupFlower",
+			"open",
+			"AudioController",
+			"velocity",
+			"CanvasController",
+			"\n    ",
+			"flowersRotations",
+			"PickupFlower",
+			"forestElementTemplates",
+			"cellElements",
+			"X",
+			"owards",
+			"x",
+			"gameState",
+			"Debug.Log(",
+			"Debug.Log",
+			"paused",
+			"DataStorage.paused",
+			"Debug.Log(\"",
+			"Instantiate(",
+			"Input.GetKey",
+			"Input.Ke",
+			"Input.",
+			"Array",
+			"SetActive",
 			"1",
 			"Debug.Log",
 			"demographics_mapper",
@@ -1024,8 +1049,124 @@
 		"selected_items":
 		[
 			[
+				"flow",
+				"FlowerController.cs"
+			],
+			[
+				"floer",
+				"FlowerController.cs"
+			],
+			[
+				"pregui",
+				"PreguiForestController.cs"
+			],
+			[
+				"preguif",
+				"PreguiForestController.cs"
+			],
+			[
+				"AudioController",
+				"AudioController.cs"
+			],
+			[
+				"vase",
+				"VaseController.cs"
+			],
+			[
+				"door",
+				"DoorController.cs"
+			],
+			[
+				"flo",
+				"FlowerController.cs"
+			],
+			[
+				"adui",
+				"AudioInHouseController.cs"
+			],
+			[
+				"aud",
+				"AudioController.cs"
+			],
+			[
+				"preguifore",
+				"PreguiForestController.cs"
+			],
+			[
+				"do",
+				"DoorController.cs"
+			],
+			[
+				"data",
+				"DataStorage.cs"
+			],
+			[
+				"can",
+				"~/Development/Pregui/Pregui/Assets/CanvasForestController.cs"
+			],
+			[
+				"CanvasForestController",
+				"~/Development/Pregui/Pregui/Assets/CanvasForestController.cs"
+			],
+			[
+				"PreguiGetInHouseController",
+				"PreguiGetInHouseController.cs"
+			],
+			[
+				"preg",
+				"PreguiForestController.cs"
+			],
+			[
+				"cam",
+				"~/Development/Pregui/Pregui/Assets/CameraForestController.cs"
+			],
+			[
 				"fore",
 				"ForestController.cs"
+			],
+			[
+				"came",
+				"~/Development/Pregui/Pregui/Assets/CameraForestController.cs"
+			],
+			[
+				"pre",
+				"PreguiForestController.cs"
+			],
+			[
+				"menu",
+				"~/Development/Pregui/Pregui/Assets/MenuController.cs"
+			],
+			[
+				"ca",
+				"CanvasController.cs"
+			],
+			[
+				"men",
+				"~/Development/Pregui/Pregui/Assets/MenuController.cs"
+			],
+			[
+				"DAta",
+				"DataStorage.cs"
+			],
+			[
+				"sor",
+				"SpriteRenderOrderSystem.cs"
+			],
+			[
+				"flowr",
+				"FlowerController.cs"
+			],
+			[
+				"Data",
+				"DataStorage.cs"
+			],
+			[
+				"cred",
+				"~/Development/Pregui/Pregui/Assets/CreditsController.cs"
+			],
+			[
+				"canva",
+				"CanvasController.cs"
 			],
 			[
 				"hous",
@@ -1042,10 +1183,6 @@
 			[
 				"order",
 				"Pregui/Assets/Scripts/SpriteRenderOrderSystem.cs"
-			],
-			[
-				"data",
-				"Pregui/Assets/Scripts/DataStorage.cs"
 			],
 			[
 				"pregui big",
@@ -1186,10 +1323,6 @@
 			[
 				"pick",
 				"Assets/PickupPointController.cs"
-			],
-			[
-				"preguifore",
-				"Assets/PreguiForestController.cs"
 			],
 			[
 				"services/send_publisher_postback_service.rb",
@@ -1426,114 +1559,6 @@
 			[
 				"remin",
 				"app/models/reminder.rb"
-			],
-			[
-				"taskte",
-				"test/lib/tasker_test.rb"
-			],
-			[
-				"sendremint",
-				"test/services/notifiers/send_reminder_first_appreciation_service_test.rb"
-			],
-			[
-				"asen",
-				"app/services/notifiers/send_mailing_list_service.rb"
-			],
-			[
-				"/notifier/reminder_first_appreciation.html",
-				"test/fixtures/notifier/reminder_first_appreciation.html"
-			],
-			[
-				"sen",
-				"app/services/notifiers/send_reminder_first_appreciation_service.rb"
-			],
-			[
-				"rem",
-				"app/models/reminder.rb"
-			],
-			[
-				"task",
-				"lib/tasker.rb"
-			],
-			[
-				"remi",
-				"app/models/reminder.rb"
-			],
-			[
-				"SendReminderFirstAppreciationServiceTest",
-				"test/services/notifiers/send_reminder_first_appreciation_service_test.rb"
-			],
-			[
-				"fa",
-				"test/factories.rb"
-			],
-			[
-				"fac",
-				"test/factories.rb"
-			],
-			[
-				"n oti",
-				"app/mailers/notifier.rb"
-			],
-			[
-				"n otite",
-				"test/mailers/notifier_test.rb"
-			],
-			[
-				"appreciableuer",
-				"app/models/appreciable_user.rb"
-			],
-			[
-				"sendte",
-				"test/services/notifiers/send_mailing_list_service_test.rb"
-			],
-			[
-				"sendre",
-				"app/services/notifiers/send_reminder_first_appreciation_service.rb"
-			],
-			[
-				"sc",
-				"db/schema.rb"
-			],
-			[
-				"remind",
-				"app/models/reminder.rb"
-			],
-			[
-				"/20200521200137_create_reminders.rb",
-				"db/migrate/20200521200137_create_reminders.rb"
-			],
-			[
-				"itializers/action_mailer.rb",
-				"config/initializers/action_mailer.rb"
-			],
-			[
-				"fronbase",
-				"app/helpers/front/base_helper.rb"
-			],
-			[
-				"base",
-				"app/helpers/admin/base_helper.rb"
-			],
-			[
-				"show",
-				"app/views/front/appreciations/show.html.erb"
-			],
-			[
-				"appli",
-				"config/application.rb"
-			],
-			[
-				"actionma",
-				"config/initializers/action_mailer.rb"
-			],
-			[
-				"appl",
-				"config/application.rb"
-			],
-			[
-				"edi",
-				"app/views/admin/admin_users/edit.html.erb"
 			]
 		],
 		"width": 0.0
